@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Инстаграм для эскорта: эффективные стратегии продвижения, создание контента, привлечение клиентов и безопасность в социальных сетях.">
+    <meta name="keywords" content="инстаграм эскорт, продвижение эскорта в инстаграм, соцсети для эскорта, модели в инстаграм, реклама эскорта">
+    <meta name="author" content="Mood Escort">
+    <title>Инстаграм для эскорта: как продвигать услуги | Mood Escort</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #0a0a0a;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --burgundy: #800020;
+            --dark-burgundy: #600018;
+            --gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--burgundy);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--burgundy);
+            color: var(--white);
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--dark-burgundy);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            padding: 120px 0 20px;
+            background: var(--gray);
+        }
+
+        .breadcrumbs ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .breadcrumbs li {
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs li:after {
+            content: '/';
+            margin-left: 10px;
+            color: var(--dark-gray);
+        }
+
+        .breadcrumbs li:last-child:after {
+            content: '';
+            margin-left: 0;
+        }
+
+        .breadcrumbs a {
+            color: var(--burgundy);
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--gold);
+        }
+
+        /* Single Article */
+        .single-article {
+            padding: 40px 0 80px;
+            background: var(--white);
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-full-image {
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .article-full-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .article-body h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-body ul, .article-body ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid var(--gold);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--dark-gray);
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+
+        .article-tag {
+            background: var(--gold);
+            color: var(--black);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+
+        .back-to-articles {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--burgundy);
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 1px solid var(--burgundy);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-articles:hover {
+            color: var(--white);
+            background: var(--burgundy);
+        }
+
+        .related-articles {
+            margin-top: 50px;
+            padding: 30px;
+            background: var(--gray);
+            border-radius: 10px;
+        }
+
+        .related-articles h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .related-articles li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .related-articles li:last-child {
+            border-bottom: none;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        .info-table th, .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info-table th {
+            background-color: var(--gold);
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .info-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .tip-box {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--gold);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-column ul li:last-child {
+            border-bottom: none;
+        }
+
+        .footer-column ul li a {
+            color: var(--gray);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--gold);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--burgundy);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--dark-burgundy);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--black);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+
+            nav ul.active {
+                left: 0;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .article-full-image {
+                height: 300px;
+            }
+
+            .info-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .footer-column {
+                flex: 100%;
+            }
+
+            .article-full-image {
+                height: 250px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .article-tag {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103844648', 'ym');
+
+        ym(103844648, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103844648" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="yandex-verification" content="79bc67976f4a8b72" />
+
+    <meta name="google-site-verification" content="HNFNEmoXD5YRU8QUOYSdXs94FV1vPt6KaBf2lqVHEwA" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J9M3VQGKK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0J9M3VQGKK');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Mood <span>Escort</span></a>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul>
+                    <li><a href="index.html#home">Главная</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#gallery">Галерея</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li>Инстаграм для эскорта</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Single Article -->
+    <section class="single-article">
+        <div class="container">
+            <div class="article-header">
+                <h1>Инстаграм для эскорта: как продвигать услуги</h1>
+                <div class="article-meta">
+                    <span class="article-date">18.02.2023</span>
+                    <span class="article-tag">Советы</span>
+                </div>
+            </div>
+
+            <div class="article-full-image">
+                <img src="img/articles/instagram-escort.jpg" alt="Продвижение эскорта в Инстаграм">
+            </div>
+
+            <div class="article-body">
+                <p>Instagram стал мощным инструментом для продвижения эскорт-услуг, позволяя устанавливать прямой контакт с потенциальными клиентами и демонстрировать эксклюзивность предлагаемых услуг. Однако работа в этой социальной сети требует особого подхода и соблюдения определенных правил.</p>
+
+                <h3>Почему Instagram эффективен для эскорта</h3>
+                <p>Instagram предлагает уникальные возможности для продвижения эскорт-услуг:</p>
+                
+                <ul>
+                    <li><strong>Визуальный контент</strong> — идеальная платформа для демонстрации внешности и стиля моделей</li>
+                    <li><strong>Целевая аудитория</strong> — доступ к состоятельным, успешным людям</li>
+                    <li><strong>Конфиденциальность</strong> — возможность настроить приватность контента</li>
+                    <li><strong>Прямое общение</strong> — личные сообщения для обсуждения деталей</li>
+                    <li><strong>Геолокация</strong> — привлечение клиентов в конкретном регионе или городе</li>
+                </ul>
+
+                <h3>Создание эффективного профиля</h3>
+                
+                <div class="tip-box">
+                    <h4>Ключевые элементы успешного профиля:</h4>
+                    <ul>
+                        <li>Четкое, качественное фото профиля</li>
+                        <li>Информативное описание в bio с указанием location</li>
+                        <li>Ссылка на официальный сайт или мессенджер</li>
+                        <li>Highlight stories с основной информацией</li>
+                    </ul>
+                </div>
+
+                <h3>Типы контента для продвижения</h3>
+                
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Тип контента</th>
+                            <th>Частота</th>
+                            <th>Цель</th>
+                            <th>Примеры</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Фото в высоком качестве</td>
+                            <td>3-4 раза в неделю</td>
+                            <td>Демонстрация внешности и стиля</td>
+                            <td>Фото в вечерних платьях, деловых костюмах</td>
+                        </tr>
+                        <tr>
+                            <td>Stories</td>
+                            <td>Ежедневно</td>
+                            <td>Поддержание engagement</td>
+                            <td>Вопросы к аудитории, опросы, закулисные моменты</td>
+                        </tr>
+                        <tr>
+                            <td>Reels/Видео</td>
+                            <td>1-2 раза в неделю</td>
+                            <td>Привлечение новой аудитории</td>
+                            <td>Короткие видео с мероприятий, стильные ролики</td>
+                        </tr>
+                        <tr>
+                            <td>Полезный контент</td>
+                            <td>1-2 раза в неделю</td>
+                            <td>Позиционирование эксперта</td>
+                            <td>Советы по этикету, стилю, проведению мероприятий</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Безопасность и конфиденциальность</h3>
+                
+                <div class="warning-box">
+                    <h4>Важные меры предосторожности:</h4>
+                    <ul>
+                        <li>Не размещайте откровенные фотографии</li>
+                        <li>Избегайте указания точных цен в открытом доступе</li>
+                        <li>Используйте watermark на фотографиях</li>
+                        <li>Не раскрывайте личную информацию</li>
+                        <li>Ведите переговоры только через безопасные мессенджеры</li>
+                    </ul>
+                </div>
+
+                <h3>Хештеги для привлечения аудитории</h3>
+                <p>Правильный подбор хештегов значительно увеличивает охват:</p>
+                
+                <ul>
+                    <li><strong>Общие</strong> #эскорт #сопровождение #модель</li>
+                    <li><strong>Географические</strong> #эскортмосква #эскортпитер #эскортдубай</li>
+                    <li><strong>Нишевые</strong> #премиумэскорт #элитныйэскорт #сопровождениемероприятий</li>
+                    <li><strong>Стилевые</strong> #вечернееплатье #деловойстиль #luxurylifestyle</li>
+                </ul>
+
+                <blockquote>
+                    "Instagram — это витрина ваших услуг. Создавайте контент, который говорит о качестве, эксклюзивности и профессионализме, не переходя границы допустимого."
+                </blockquote>
+
+                <h3>Работа с аудиторией и клиентами</h3>
+                <p>Эффективные стратегии взаимодействия:</p>
+                
+                <ol>
+                    <li><strong>Регулярное взаимодействие</strong> — отвечайте на комментарии и сообщения</li>
+                    <li><strong>Эксклюзивность</strong> — предлагайте закрытый контент для подписчиков</li>
+                    <li><strong>Анонсирование</strong> — сообщайте о доступности в разных городах</li>
+                    <li><strong>Обратная связь</strong> — используйте опросы для изучения предпочтений аудитории</li>
+                    <li><strong>Кросс-промоушн</strong> — взаимодействие с complementary брендами (люксовые авто, рестораны, fashion)</li>
+                </ol>
+
+                <h3>Рекламные стратегии в Instagram</h3>
+                <p>Для продвижения эскорт-услуг эффективны:</p>
+                
+                <ul>
+                    <li><strong>Таргетированная реклама</strong> — настройка на целевую аудиторию по доходу, интересам, геолокации</li>
+                    <li><strong>Collaborations</strong> — сотрудничество с блогерами luxury сегмента</li>
+                    <li><strong>Instagram Shopping</strong> — если предлагаются дополнительные услуги (консультации и т.д.)</li>
+                    <li><strong>Конкурсы и розыгрыши</strong> — для увеличения охвата и вовлеченности</li>
+                </ul>
+
+                <h3>Аналитика и отслеживание результатов</h3>
+                <p>Для измерения эффективности отслеживайте:</p>
+                
+                <ul>
+                    <li>Рост количества подписчиков</li>
+                    <li>Вовлеченность (лайки, комментарии, сохранения)</li>
+                    <li>Конверсию из подписчиков в клиентов</li>
+                    <li>Самые эффективные типы контента</li>
+                    <li>Оптимальное время для публикаций</li>
+                </ul>
+
+                <p>Продвижение в Instagram требует стратегического подхода, постоянного анализа и адаптации к изменениям алгоритмов платформы. Правильно выстроенная работа в этой социальной сети может стать мощным каналом привлечения качественных клиентов для вашего эскорт-агентства.</p>
+
+                <a href="blog.html" class="back-to-articles">← Вернуться к списку статей</a>
+
+                <div class="related-articles">
+                    <h3>Читайте также</h3>
+                    <ul>
+                        <li><a href="kak-vybrat-model-escorta.html">Как выбрать модель эскорта: руководство для клиентов</a></li>
+                        <li><a href="bezopasnost-v-escort-uslugah.html">Безопасность в эскорт-услугах: что нужно знать</a></li>
+                        <li><a href="escort-uslugi-v-moskve.html">Эскорт услуги в Москве: особенности и преимущества</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Mood Escort</h3>
+                    <p>Элитное эскорт-агентство премиум-класса. Индивидуальный подход, профессиональные модели, полная конфиденциальность.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="index.html#gallery">Галерея</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>WhatsApp: +7 (917) 367-2255</li>
+                        <li>Telegram: @moodescort</li>
+                        <li>Email: info@moodescort.net</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Mood Escort. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">↑</div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('nav ul');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    if (this.getAttribute('href') === '#') return;
+
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Back to Top Button
+            const backToTopBtn = document.querySelector('.back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Микроразметка Schema.org для статьи -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://moodescort.net/instagram-dlya-escorta.html"
+      },
+      "headline": "Инстаграм для эскорта: как продвигать услуги",
+      "description": "Инстаграм для эскорта: эффективные стратегии продвижения, создание контента, привлечение клиентов и безопасность в социальных сетях.",
+      "image": "https://moodescort.net/img/articles/instagram-escort.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Mood Escort"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mood Escort",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://moodescort.net/logo.png"
+        }
+      },
+      "datePublished": "2023-02-18",
+      "dateModified": "2023-02-18",
+      "keywords": "инстаграм эскорт, продвижение эскорта в инстаграм, соцсети для эскорта, модели в инстаграм"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,945 @@
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Безопасность в эскорт-услугах: полное руководство по защите клиентов и моделей. Правила безопасности, проверка агентств, конфиденциальность и правовые аспекты.">
+    <meta name="keywords" content="безопасность эскорт, конфиденциальность эскорт, проверка эскорт агентства, защита клиентов эскорта, правовые аспекты эскорта">
+    <meta name="author" content="Mood Escort">
+    <title>Безопасность в эскорт-услугах: что нужно знать | Mood Escort</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌟</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #0a0a0a;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --burgundy: #800020;
+            --dark-burgundy: #600018;
+            --gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--burgundy);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--gold);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--burgundy);
+            color: var(--white);
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--dark-burgundy);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            padding: 120px 0 20px;
+            background: var(--gray);
+        }
+
+        .breadcrumbs ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .breadcrumbs li {
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs li:after {
+            content: '/';
+            margin-left: 10px;
+            color: var(--dark-gray);
+        }
+
+        .breadcrumbs li:last-child:after {
+            content: '';
+            margin-left: 0;
+        }
+
+        .breadcrumbs a {
+            color: var(--burgundy);
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--gold);
+        }
+
+        /* Single Article */
+        .single-article {
+            padding: 40px 0 80px;
+            background: var(--white);
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .article-full-image {
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .article-full-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .article-body h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-body ul, .article-body ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid var(--gold);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--dark-gray);
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+
+        .article-tag {
+            background: var(--gold);
+            color: var(--black);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+
+        .back-to-articles {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--burgundy);
+            font-weight: 600;
+            padding: 10px 20px;
+            border: 1px solid var(--burgundy);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-articles:hover {
+            color: var(--white);
+            background: var(--burgundy);
+        }
+
+        .related-articles {
+            margin-top: 50px;
+            padding: 30px;
+            background: var(--gray);
+            border-radius: 10px;
+        }
+
+        .related-articles h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .related-articles ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .related-articles li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .related-articles li:last-child {
+            border-bottom: none;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        .info-table th, .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info-table th {
+            background-color: var(--gold);
+            color: var(--black);
+            font-weight: 600;
+        }
+
+        .info-table tr:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .tip-box {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--gold);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .security-level {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .security-item {
+            flex: 1;
+            min-width: 250px;
+            background: var(--gray);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--burgundy);
+        }
+
+        .security-item h4 {
+            color: var(--burgundy);
+            margin-bottom: 15px;
+        }
+
+        .checklist {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-column ul li:last-child {
+            border-bottom: none;
+        }
+
+        .footer-column ul li a {
+            color: var(--gray);
+        }
+
+        .footer-column ul li a:hover {
+            color: var(--gold);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--burgundy);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--dark-burgundy);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--black);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+            }
+
+            nav ul.active {
+                left: 0;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .article-full-image {
+                height: 300px;
+            }
+
+            .info-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .security-level {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .footer-column {
+                flex: 100%;
+            }
+
+            .article-full-image {
+                height: 250px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .article-tag {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103844648', 'ym');
+
+        ym(103844648, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103844648" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="yandex-verification" content="79bc67976f4a8b72" />
+
+    <meta name="google-site-verification" content="HNFNEmoXD5YRU8QUOYSdXs94FV1vPt6KaBf2lqVHEwA" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J9M3VQGKK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0J9M3VQGKK');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Mood <span>Escort</span></a>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul>
+                    <li><a href="index.html#home">Главная</a></li>
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#gallery">Галерея</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li>Безопасность в эскорт-услугах</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Single Article -->
+    <section class="single-article">
+        <div class="container">
+            <div class="article-header">
+                <h1>Безопасность в эскорт-услугах: что нужно знать</h1>
+                <div class="article-meta">
+                    <span class="article-date">15.03.2023</span>
+                    <span class="article-tag">Безопасность</span>
+                </div>
+            </div>
+
+            <div class="article-full-image">
+                <img src="img/articles/bezopasnost-escort.jpg" alt="Безопасность в эскорт-услугах">
+            </div>
+
+            <div class="article-body">
+                <p>Безопасность — фундаментальный аспект качественных эскорт-услуг. Как для клиентов, так и для моделей, обеспечение безопасности является приоритетом, который влияет на репутацию агентства и комфорт всех участников процесса. В этой статье мы рассмотрим ключевые аспекты безопасности в индустрии эскорта.</p>
+
+                <h3>Проверка агентства: на что обращать внимание</h3>
+                
+                <div class="security-level">
+                    <div class="security-item">
+                        <h4>Легальность деятельности</h4>
+                        <p>Проверьте, зарегистрировано ли агентство официально и имеет ли все необходимые разрешения для деятельности в вашем регионе.</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>Репутация и отзывы</h4>
+                        <p>Изучите отзывы клиентов, историю работы агентства на рынке, наличие рекомендаций от постоянных клиентов.</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>Профессионализм менеджеров</h4>
+                        <p>Обратите внимание на качество коммуникации, полноту предоставляемой информации, готовность ответить на все вопросы.</p>
+                    </div>
+                </div>
+
+                <h3>Конфиденциальность и защита данных</h3>
+                
+                <ul class="checklist">
+                    <li><strong>Соглашение о конфиденциальности</strong> — профессиональные агентства всегда предлагают подписание NDA</li>
+                    <li><strong>Защита персональных данных</strong> — убедитесь, что ваша информация хранится безопасно</li>
+                    <li><strong>Анонимность платежей</strong> — возможность использования discreet способов оплаты</li>
+                    <li><strong>Контроль информации</strong> — право на удаление ваших данных после оказания услуг</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4>Важно знать:</h4>
+                    <p>Профессиональные эскорт-агентства никогда не требуют предоставления сканов паспортов или других удостоверений личности. Остерегайтесь сервисов, которые запрашивают подобную информацию.</p>
+                </div>
+
+                <h3>Безопасность встреч: практические рекомендации</h3>
+                
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Мероприятие</th>
+                            <th>Меры безопасности</th>
+                            <th>Рекомендации</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Первая встреча</td>
+                            <td>Публичное место, предварительное знакомство по видео-звонку</td>
+                            <td>Выбирайте рестораны или lounge-бары в престижных отелях</td>
+                        </tr>
+                        <tr>
+                            <td>Деловые мероприятия</td>
+                            <td>Четкое обсуждение роли и поведения модели, дресс-кода</td>
+                            <td>Предоставьте модели информацию о participants мероприятия</td>
+                        </tr>
+                        <tr>
+                            <td>Частные встречи</td>
+                            <td>Проверка location, информирование третьих лиц о месте встречи</td>
+                            <td>Рекомендуются встречи в premium отелях с хорошей репутацией</td>
+                        </tr>
+                        <tr>
+                            <td>Путешествия</td>
+                            <td>Подробное планирование, безопасные трансферы, проверенные отели</td>
+                            <td>Используйте услуги только проверенных travel-партнеров</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Финансовая безопасность</h3>
+                
+                <div class="warning-box">
+                    <h4>Предупреждение:</h4>
+                    <p>Никогда не переводите предоплату на личные карты моделей или сомнительные платежные системы. Профессиональные агентства работают через официальные расчетные счета и предоставляют все необходимые финансовые документы.</p>
+                </div>
+
+                <ul>
+                    <li><strong>Прозрачное ценообразование</strong> — все услуги и дополнительные опции должны быть четко прописаны</li>
+                    <li><strong>Официальные платежи</strong> — возможность получения invoice и подтверждающих документов</li>
+                    <li><strong>Отсутствие скрытых комиссий</strong> — итоговая стоимость должна соответствовать озвученной</li>
+                    <li><strong>Возврат средств</strong> — условия возврата при отмене мероприятия</li>
+                </ul>
+
+                <blockquote>
+                    "Доверие — это основа успешного сотрудничества в сфере эскорт-услуг. Но доверие должно быть подкреплено прозрачными правилами, профессиональным подходом и гарантиями безопасности для всех сторон."
+                </blockquote>
+
+                <h3>Правовые аспекты безопасности</h3>
+                <p>В разных странах и регионах действуют различные правовые нормы, регулирующие эскорт-услуги:</p>
+                
+                <ol>
+                    <li><strong>Проверка местного законодательства</strong> — убедитесь, что услуги оказываются в правовом поле</li>
+                    <li><strong>Возраст verification</strong> — профессиональные агентства тщательно проверяют возраст всех models</li>
+                    <li><strong>Налоговое соответствие</strong> — агентство должно работать в соответствии с tax законодательством</li>
+                    <li><strong>Международные нормы</strong> — при travel сопровождении учитываются законы стран назначения</li>
+                </ol>
+
+                <h3>Критерии безопасного агентства</h3>
+                
+                <div class="security-level">
+                    <div class="security-item">
+                        <h4>Профессиональный сайт</h4>
+                        <p>Качественный, информативный веб-сайт с четкими условиями сотрудничества</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>Честные отзывы</h4>
+                        <p>Наличие реальных отзывов с деталями, а не шаблонных комментариев</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>Прозрачность</h4>
+                        <p>Открытость в общении, готовность ответить на все вопросы клиента</p>
+                    </div>
+                </div>
+
+                <h3>Что должно насторожить</h3>
+                
+                <div class="warning-box">
+                    <ul>
+                        <li>Требование полной предоплаты без договора</li>
+                        <li>Нежелание предоставлять информацию об агентстве</li>
+                        <li>Отсутствие официальных контактов и адресов</li>
+                        <li>Давление при принятии решения</li>
+                        <li>Предложения, которые кажутся слишком хорошими, чтобы быть правдой</li>
+                    </ul>
+                </div>
+
+                <h3>Советы по обеспечению личной безопасности</h3>
+                
+                <div class="tip-box">
+                    <h4>Для клиентов:</h4>
+                    <ul>
+                        <li>Всегда сообщайте trusted лицу о месте и времени встречи</li>
+                        <li>Используйте только официальные каналы связи</li>
+                        <li>Храните финансовые документы и подтверждения оплаты</li>
+                        <li>Уважайте личные границы и правила models</li>
+                    </ul>
+                </div>
+
+                <p>Безопасность в эскорт-услугах — это совместная ответственность агентства, моделей и клиентов. Выбирая профессиональное агентство с прозрачными условиями работы и четкими правилами безопасности, вы обеспечиваете себе не только приятный опыт, но и полную конфиденциальность и защиту.</p>
+
+                <p>Mood Escort уделяет особое внимание всем аспектам безопасности, обеспечивая нашим клиентам и моделям максимальную защиту и комфорт на всех этапах сотрудничества.</p>
+
+                <a href="blog.html" class="back-to-articles">← Вернуться к списку статей</a>
+
+                <div class="related-articles">
+                    <h3>Читайте также</h3>
+                    <ul>
+                        <li><a href="kak-vybrat-model-escorta.html">Как выбрать модель эскорта: руководство для клиентов</a></li>
+                        <li><a href="escort-uslugi-v-moskve.html">Эскорт услуги в Москве: особенности и преимущества</a></li>
+                        <li><a href="escort-v-dubae-sovety.html">Эскорт в Дубае: советы по выбору и особенности</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Mood Escort</h3>
+                    <p>Элитное эскорт-агентство премиум-класса. Индивидуальный подход, профессиональные модели, полная конфиденциальность.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="index.html#about">О нас</a></li>
+                        <li><a href="index.html#gallery">Галерея</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>WhatsApp: +7 (917) 367-2255</li>
+                        <li>Telegram: @moodescort</li>
+                        <li>Email: info@moodescort.net</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Mood Escort. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">↑</div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('nav ul');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    if (this.getAttribute('href') === '#') return;
+
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Back to Top Button
+            const backToTopBtn = document.querySelector('.back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Микроразметка Schema.org для статьи -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://moodescort.net/bezopasnost-v-escort-uslugah.html"
+      },
+      "headline": "Безопасность в эскорт-услугах: что нужно знать",
+      "description": "Безопасность в эскорт-услугах: полное руководство по защите клиентов и моделей. Правила безопасности, проверка агентств, конфиденциальность и правовые аспекты.",
+      "image": "https://moodescort.net/img/articles/bezopasnost-escort.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "Mood Escort"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mood Escort",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://moodescort.net/logo.png"
+        }
+      },
+      "datePublished": "2023-03-15",
+      "dateModified": "2023-03-15",
+      "keywords": "безопасность эскорт, конфиденциальность эскорт, проверка эскорт агентства, защита клиентов эскорта"
+    }
+    </script>
+</body>
+</html>

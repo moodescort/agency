@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://moodescort.net/sitemap.xml
