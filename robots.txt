@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://moodescort.net/sitemap.xml
+Sitemap: https://moodescort.github.io/agency/sitemap.xml
